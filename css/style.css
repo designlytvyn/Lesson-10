@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@font-face {
+    font-family: "MullerBold";
+    font-display: swap;
+    src: url("../fonts/MullerBold.woff") format("woff"),
+         url("../fonts/MullerBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "MullerRegular";
+    font-display: swap;
+    src: url("../fonts/MullerRegular.woff") format("woff"),
+         url("../fonts/MullerRegular.woff2") format('woff2');
+}
+* { 
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Russo One', sans-serif;
+}
+body {
+    font-family: "MullerRegular";
+    box-sizing: border-box;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top; 
+} 
+h1 {
+    text-transform: uppercase;
+    font-size: 44px;
+    padding-top: 140px;
+    letter-spacing: 3px;
+}
+span {
+    color: #46b1de;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    min-height: 65px;
+    margin: 0px auto;
+}
+.logo {
+    display: flex;
+    align-items: flex-end;
+}
+.logo > a + a p {
+    font-size: 25px;
+    font-weight: 900;
+    color: #46b1de;
+}
+.menu {
+    display: flex;
+    align-items: flex-end;
+}
+.menu ul {
+    min-width: 250px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul li a:hover {
+    color: #46b1de;
+}
+.tel {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-width: 150px;
+}
+
+
+
+.first-screen {
+    position: relative;
+    max-width: 1150px;
+    margin: 0px auto;
+}
+.box-ledy {
+    margin-top: 36px;
+    position: absolute;
+    right: -130px;
+}
+.block > p {
+    font-size: 20px;
+    font-weight: 900;
+}
+.box-button {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.box-button a {
+    font-family: "MullerRegular";
+    width: 160px;
+    height: 35px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #46b1de;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px 0px 0px;
+}
+.box-button > a:hover {
+    opacity: 0.5;
+    border: 1px solid black;
+}
+.box-button > a + a {
+    background-color: white;
+    color: #46b1de;
+}
+
+.priority {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-around;
+}
+.priority div {
+    display: flex;
+    z-index: 2;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    box-shadow: 10px 9px 7px gray;
+}
+.priority div p {
+    font-family: "MullerBold";
+    display: inline-block;
+    align-items: center;
+    
+}
+.first-screen .priority div .number {
+    font-size: 65px;
+    color: #46b1de;
+    text-align: center;
+}
+
+
+
+
+.second-screen {
+    max-width: 1150px;
+    margin: 0px auto;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+h2 span {
+    color: #46b1de;
+}
+.second-screen > p {
+    margin-top: 25px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-weight: 600px;
+}
+.second-box {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px auto;
+    grid-template-columns: 300px 300px 300px;
+    width: 1070px;
+    height: 400px;
+    background-color: #46b1de;
+}
+.second-box div {
+    display: grid;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 150px;
+    row-gap: 0px;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 15px;
+    top: 5px;
+}
+.second-box div p {
+    display: flex;
+    height: 40px;
+}
+.second-box div div {
+    display: flex;
+    justify-content: flex-start;
+    width: 240px;
+    height: 50px;
+    border: none;
+}
+.second-box div div > p {
+    font-size: 37px;
+    color: #46b1de;
+    font-family: "MullerBold";
+}
+.second-box div > p + p {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.second-box div > p + p + p {
+    font-size: 15px;
+    text-transform: none;
+    color: black;
+}
+.box-6 {
+    order: 5;
+}
+.box-4 {
+    order: 4;
+}
+
+footer {
+    margin-top: 130px;
+    background: rgb(0,10,36);
+    background: linear-gradient(90deg, rgba(0,10,36,1) 0%, rgba(147,182,199,1) 0%, rgba(4,116,163,1) 100%);
+}
+.footer {
+    display: flex;
+    max-width: 1150px;
+    min-height: 450px;
+    margin: 0px auto;
+}
+.box-left {
+    margin-left: 50px;
+    margin-right: 380px;
+}
+.box-menu {
+    align-items: flex-end;
+}
+.logo-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.logo-footer > a + a {
+    font-family: "MullerRegular";
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.logo-footer > a + a p {
+    color: #0f2d4a;;
+}
+.logo-footer > a + a span {
+    color: #0f2d4a;
+    font-size: 20px;
+}
+
+.menu-footer ul {
+    list-style: none;
+    margin-right: 100px;
+    text-decoration: none;
+}
+.menu-footer ul li a {
+    color: #0f2d4a;;
+}  
+.menu-footer > a  {
+    color: black;
+}
+.menu-footer > a:active {
+    font-weight: 800;
+}
+.menu-footer > a + a {
+    border-left: 1px solid black;
+    padding-left: 5px;
+}
+.menu-footer > a + a:active {
+    font-weight: 800;
+}
+.box-left .box-menu {
+    display: flex;
+}
+.contacts-footer {
+    margin-top: 100px;
+}
+.team h5 {
+    color: #0f2d4a;
+}
+.team p {
+    color: #0f2d4a;
+}
+
+
+.contacts-footer h4 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-style: normal;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+.contacts-footer .tel {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.contacts-footer .social {
+    max-width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacts-footer .insta {
+    display: flex;
+    align-items: center;
+}
+.contacts-footer .mail {
+    display: flex;
+    align-items: center;
+}
+.contacts-footer a img {
+    margin-right: 25px;
+}
+.contacts-footer .copiryght {
+    margin-top: 20px;
+    margin-left: 210px;
+}
+.contacts-footer p {
+    color: white;
+}
